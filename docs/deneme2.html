@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şiir Gösterme</title>
+    <style>
+        #siir {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-family: 'Arial',sans-serif;
+            
+        }
+
+
+        
+
+        #siir img {
+            width: 500px;
+            height: 700px;
+            margin-left: 50px;
+        }
+
+        
+
+
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        audio{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    
+
+    <button onclick="openPoem()">Şiiri Göter</button>
+
+    <br><br>
+
+    <audio id="siirSound" src="sound/İsmet ÖZEL - Mataramda Tuzlu Su (1981).mp3"
+    controls
+    
+    >
+    </audio>
+
+    <div id="siir">
+        
+        
+        <p>
+            <b>Mataramda Tuzlu Su</b>
+            <br><br>
+            West Indies,Kızıl Elma,İtaki,Maçin!<br>
+            Uzun yola çıkmaya hüküm giydim.<br>
+            Beyazların yöresinde nasibim kalmadı<br>
+            yerlilerin topraklarına karşı suç işledim<br>
+            zorbaların arasında tehlikeli bir nifak<br>
+            uyrukların arasında uygunsuz biriyim<br>
+            vahşetim<br>
+            beni baygın meyvaların lezzetinden kopardı<br>
+            kendime dünyada bir<br>
+            acı kçk tadı seçtim<br>
+            yakın yerde soluklanacak gölge bana yok<br>
+            uzun yola çıkmaya hüküm giydim.<br><br>
+            Uzak nedir?<br>
+            Kendinin bile ücrasında yaşayan benim için<br>
+            gidecek yer ne kadar uzak olabilir?<br>
+            Başım açık, saçlarımı ikiye<br>
+            ortadan ayırdım<br>
+            kimin ülkesinden geçsem<br>
+            şakaklarımda dövmeler beni ele verecek<br>
+            cesur ve onurlu diyecekler<br>
+            halbuki suskun ve kederliyim<br>
+            korsanlardan kaptığım gürlek nara<br>
+            işime yaramıyor<br>
+            rençberlerin o rahat<br>
+            ve oturmuş lehçesinden tiksinirim<br>
+            boynumda<br>
+            bana yargı yükleyenlerin<br>
+            utançlarından yapılma mücevherler<br>
+            sırtımda sağır kantarı gizli bilgilerin<br>
+            mataramdaki suya tuz ekledim, azığım yok<br>
+            uzun yola çıkmaya hüküm giydim.<br>
+            Bir hayatı,ısmarlama bir hayatı bırakıyorum<br>
+            görenler üstünde iyi duruyor derdi her bakışta<br>
+            askerken kantinden satın aldığım cep aynası<br>
+            bazı geceler çıkarken<br>
+            uçarı bir gülümseyişle takındığım muşta<br>
+            gibi lükslerim de burda kalacak<br>
+            siparişi yargıcılar tarafından verilmiş<br>
+            bu hayattan ne koku, ne yankı, ne de boya<br>
+            taşımamı yasaklayan belgeyi imzaladım<br>
+            burada bitti artık işim, ocağım yok<br>
+            uzun yola çıkmaya hüküm giydim.<br><br>
+            <b>İsmet Özel</b>  
+        </p>
+        <a href="https://www.youtube.com/watch?v=ZNhPl-3fiM8"
+        title="Youtube Mataramda Tuzlu Su Linki"
+        target="_blank"
+        >Open The Youtube</a>
+        
+
+        <img src="Fotoğraf/Osman.jpg"
+        alt="Osman Resmi">
+
+    </div>
+
+    <script>
+        function openPoem(){
+            var siirDiv = document.getElementById("siir");
+            var openSound = document.getElementById("siirSound");
+            siirDiv.style.display ="flex";
+            openSound.style.display="block";
+            siirSound.play();
+        }
+    </script>
+</body>
+</html>
